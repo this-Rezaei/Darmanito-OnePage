@@ -1,0 +1,132 @@
+.navbar {
+    background: #fff;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    direction: rtl;
+}
+.navbar-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container {
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 25px 0;
+}
+.menu-icon {
+    font-size: 1.1rem;
+    display: none;
+}
+.navbar-logo {
+    display: flex;
+}
+.logo-type {
+    padding-right: 10px;
+}
+.logo-type h3 {
+    font-size: 1rem;
+}
+.logo-type p {
+    font-size: 0.6rem;
+    color: #333;
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.nav-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    text-align: left;
+}
+.nav-item1 {
+    display: none;
+}
+.btn {
+    padding-right: 150px;
+}
+.nav-item:hover {
+    color: var(--darkblue);
+    transition: all 0.2s ease-in;
+}
+.nav-btn {
+    font-family: var(--iranSans);
+    font-size: 0.8rem;
+    padding: 15px 20px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    color: var(--blue);
+    background-color: #1893ff2d;
+    cursor: pointer;
+}
+.nav-btn:hover {
+    background-color: var(--blue);
+    color: white;
+    transition: all 0.6s ease;
+}
+@media only screen and (max-width: 960px) {
+    .navbar-container {
+        justify-content: space-between;
+    }
+    .container {
+        padding: 25px 25px;
+    }
+    .nav-item1 {
+        display: flex;
+    }
+    .menu-icon {
+        display: flex;
+    }
+    .menu-icon:hover {
+        color: var(--blue);
+    }
+    .nav-menu {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 85px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+    .nav-menu.active {
+        background: #fff;
+        left: 0;
+        opacity: 1;
+        transition: all 0.6s ease;
+        z-index: 1;
+    }
+    .nav-item {
+        padding: 5px 10px;
+        font-size: 1rem;
+        width: 100%;
+        text-align: right;
+    }
+    .nav-item:hover {
+        color: var(--blue);
+        border-right: 5px solid var(--blue);
+        transition: all 0.2s ease-in;
+    }
+    .btn {
+        padding: 20px 0;
+        width: 100%;
+    }
+}
+@media only screen and (max-with: 400px) {
+    .container {
+        padding: 10px 20px;
+    }
+}

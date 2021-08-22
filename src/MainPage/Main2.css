@@ -1,0 +1,189 @@
+.downloadstp {
+    max-width: 100%;
+    background: #1894ff;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+.downloadsection {
+    place-self: center;
+    direction: rtl;
+}
+.downloadsection h2,
+.downloadsection p {
+    color: white;
+}
+.downloadsection p {
+    padding: 30px 0;
+}
+.input1 {
+    background: white;
+    width: 470px;
+    border-radius: 10px;
+}
+.input1 input {
+    padding: 20px 30px;
+    margin-right: 10px;
+    width: 350px;
+    border: none;
+    outline: none;
+    font-family: var(--iranSans);
+}
+.input1 button {
+    background: var(--blue);
+    font-family: var(--iranSans);
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+.mobailimg {
+    height: 500px;
+    margin-top: 30px;
+}
+.downloadsection img {
+    margin-top: 30px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.backgrundregistr {
+    background: url(./assets/Path15701.png);
+    max-width: 100%;
+    background-repeat: no-repeat;
+    margin: 50px 0;
+    background-position-x: right;
+    /* سایز بک گراند */
+    height: 650px;
+}
+.containerregistr {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+}
+.registrsection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    width: 70%;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #1893ff6e;
+}
+.registrsection img {
+    align-self: flex-end;
+    justify-self: center;
+    max-width: 100%;
+    height: 315px;
+}
+.section {
+    align-self: center;
+    margin-right: 50px;
+}
+.section p {
+    width: auto;
+    padding: 20px 0;
+    text-align: end;
+    line-height: 30px;
+}
+.section h2 {
+    margin: 0;
+}
+.input2 {
+    background-color: #eee;
+    width: 400px;
+    border-radius: 10px;
+    margin: 30px 0px;
+    float: right;
+}
+.input2 input {
+    background-color: #eee;
+    padding: 20px 30px;
+    margin-right: 10px;
+    width: 250px;
+    direction: rtl;
+    border: none;
+    outline: none;
+    font-family: var(--iranSans);
+}
+.input2:focus-within {
+    border: 0.5px solid #2361b5;
+    box-shadow: 0px 0px 20px #1893ff6e;
+    transition: all 0.5s ease;
+}
+.input2 button {
+    background: var(--blue);
+    font-family: var(--iranSans);
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+.poshtbani {
+    background-color: var(--blue);
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    direction: rtl;
+    grid-gap: 20px;
+}
+.texts {
+    place-self: center;
+    display: flex;
+    color: white;
+}
+.texts p {
+    padding-right: 50px;
+    font-size: 0.6rem;
+    margin-top: 10px;
+}
+.imgback {
+    background-color: #0000003d;
+    border-radius: 7px;
+    padding: 10px 20px;
+    place-self: center;
+}
+@media only screen and (max-width: 1024px) {
+    .icons {
+        display: grid;
+        position: absolute;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (max-width: 768px) {
+    .downloadstp {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+    }
+    .input1 {
+        margin: 0;
+    }
+    .downloadsection {
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width: 415px) {
+    .input1 {
+        background: white;
+        width: 375px;
+        border-radius: 10px;
+    }
+    .input1 input {
+        padding: 20px 20px;
+        margin-right: 10px;
+        width: 250px;
+        border: none;
+        outline: none;
+        font-family: var(--iranSans);
+    }
+}
